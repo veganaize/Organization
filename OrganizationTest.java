@@ -1,7 +1,3 @@
-//import Organization;
-//import Person;
-//import Department;
-
 public class OrganizationTest {
 
     public static void main(String[] args) {
