@@ -18,6 +18,7 @@ public class OrganizationTest {
         department.id = "OMM-0000";
         
         organization.add(department);
+        department.add(person);
         
         System.out.println("Organization has these people: "
                 + organization.peopleAsString());

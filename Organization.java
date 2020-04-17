@@ -18,10 +18,7 @@ public class Organization extends Identity {
     String peopleAsString() {
         String string = "";
         for (Person person : persons) {
-            string += "\n";
-            string += "Name: " + person.nameAsString() + "\n";
-            string += "ID: " + person.idAsString() + "\n";
-            string += "Email: " + person.email + "\n";
+            string += person.asString();
         }
         
         return string;
@@ -33,6 +30,7 @@ public class Organization extends Identity {
             string += "\n";
             string += "Department Name: " + department.nameAsString() + "\n";
             string += "Department ID: " + department.idAsString() + "\n";
+            string += "Department Personnel: " + department.personsAsString() + "\n";
         }
         
         return string;
