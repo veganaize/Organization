@@ -1,3 +1,4 @@
+![assignment details](organization.png)
 ### Compile
 ```
 javac *.java

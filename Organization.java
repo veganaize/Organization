@@ -9,11 +9,11 @@ public class Organization {
     ArrayList<Person> persons = new ArrayList<>();
     ArrayList<Department> departments = new ArrayList<>();
 
-    void addPerson(Person person) {
+    void add(Person person) {
         persons.add(person);
     }
 
-    void addDepartment(Department department) {
+    void add(Department department) {
         departments.add(department);
     }
     

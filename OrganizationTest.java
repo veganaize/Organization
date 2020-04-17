@@ -11,13 +11,13 @@ public class OrganizationTest {
         person.salary = "$80,000";
 
         Organization organization = new Organization();
-        organization.addPerson(person);
+        organization.add(person);
         
         Department department = new Department();
         department.name = "Dept Zero";
         department.id = "OMM-0000";
         
-        organization.addDepartment(department);
+        organization.add(department);
         
         System.out.println("Organization has these people: "
                 + organization.peopleAsString());
