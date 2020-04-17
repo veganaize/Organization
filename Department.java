@@ -1,6 +1,3 @@
-public class Department {
-
-    String name;
-    String id;
+public class Department extends Identity {
 
 }

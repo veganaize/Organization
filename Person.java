@@ -1,7 +1,5 @@
-public class Person {
+public class Person extends Identity {
 
-    String id;
-    String name;
     String address;
     String mobileNumber;
     String email;

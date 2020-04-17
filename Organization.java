@@ -1,10 +1,8 @@
 import java.util.ArrayList;
 
-public class Organization {
+public class Organization extends Identity {
 
-    String name;
     String address;
-    String id;
 
     ArrayList<Person> persons = new ArrayList<>();
     ArrayList<Department> departments = new ArrayList<>();
@@ -21,8 +19,8 @@ public class Organization {
         String string = "";
         for (Person person : persons) {
             string += "\n";
-            string += "Name: " + person.name + "\n";
-            string += "ID: " + person.id + "\n";
+            string += "Name: " + person.nameAsString() + "\n";
+            string += "ID: " + person.idAsString() + "\n";
             string += "Email: " + person.email + "\n";
         }
         
@@ -33,8 +31,8 @@ public class Organization {
         String string = "";
         for (Department department : departments) {
             string += "\n";
-            string += "Department Name: " + department.name + "\n";
-            string += "Department ID: " + department.id + "\n";
+            string += "Department Name: " + department.nameAsString() + "\n";
+            string += "Department ID: " + department.idAsString() + "\n";
         }
         
         return string;
