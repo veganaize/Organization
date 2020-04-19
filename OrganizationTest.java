@@ -5,7 +5,7 @@ public class OrganizationTest {
         Person person = new Person();
         person.name("Person's Name Here");
         person.id("THX-1138");
-        person.address = "1234 Some Road";
+        person.address("1234 Some Road");
         person.mobileNumber = "555-555-5555";
         person.email = "person@example.com";
         person.salary = "$80,000";

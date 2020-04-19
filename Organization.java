@@ -1,16 +1,18 @@
 import java.util.ArrayList;
 
-class Organization implements Identifiable {
+class Organization implements Identifiable, Addressable {
 
-    String address;
     Identity identity = new Identity();
-
+    Address address = new Address();
+    
     ArrayList<Person> persons = new ArrayList<>();
     ArrayList<Department> departments = new ArrayList<>();
 
     public String nameAsString() { return identity.nameAsString(); }
     public String idAsString() { return identity.idAsString(); }
-
+    public String address() { return address.address(); }
+    public void address(String string) { address.address(string); };
+    
     void add(Person person) {
         persons.add(person);
     }
