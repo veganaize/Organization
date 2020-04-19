@@ -1,8 +1,15 @@
 import java.util.ArrayList;
 
-public class Department extends Identity {
+class Department {
 
     ArrayList<Person> personnel = new ArrayList<>();
+    Identity identity = new Identity();
+    
+    void name(String string) { identity.name = string; }
+    void id(String string) { identity.id = string; }
+    
+    String nameAsString() { return identity.nameAsString(); }
+    String idAsString() { return identity.idAsString(); }
     
     void add(Person person) {
         personnel.add(person);

@@ -1,9 +1,17 @@
-public class Person extends Identity {
+class Person {
 
     String address;
     String mobileNumber;
     String email;
     String salary;
+    
+    Identity identity = new Identity();
+    
+    void name(String string) { identity.name = string; }
+    void id(String string) { identity.id = string; }
+    
+    String nameAsString() { return identity.nameAsString(); }
+    String idAsString() { return identity.idAsString(); }
     
     String asString() {        
         String string = "\n";
@@ -13,5 +21,4 @@ public class Person extends Identity {
         
         return string;
     }
-
 }

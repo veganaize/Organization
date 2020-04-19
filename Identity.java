@@ -1,4 +1,4 @@
-abstract class Identity {
+class Identity {
 
     String name;
     String id;

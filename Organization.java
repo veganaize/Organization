@@ -1,11 +1,15 @@
 import java.util.ArrayList;
 
-public class Organization extends Identity {
+class Organization {
 
     String address;
+    Identity identity = new Identity();
 
     ArrayList<Person> persons = new ArrayList<>();
     ArrayList<Department> departments = new ArrayList<>();
+
+    String nameAsString() { return identity.nameAsString(); }
+    String idAsString() { return identity.idAsString(); }
 
     void add(Person person) {
         persons.add(person);
