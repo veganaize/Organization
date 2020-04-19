@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class Department {
+class Department implements Identifiable {
 
     ArrayList<Person> personnel = new ArrayList<>();
     Identity identity = new Identity();
@@ -8,8 +8,8 @@ class Department {
     void name(String string) { identity.name = string; }
     void id(String string) { identity.id = string; }
     
-    String nameAsString() { return identity.nameAsString(); }
-    String idAsString() { return identity.idAsString(); }
+    public String nameAsString() { return identity.nameAsString(); }
+    public String idAsString() { return identity.idAsString(); }
     
     void add(Person person) {
         personnel.add(person);

@@ -1,13 +1,13 @@
-class Identity {
+class Identity implements Identifiable {
 
     String name;
     String id;
 
-    String nameAsString() {
+    public String nameAsString() {
         return name;
     }
     
-    String idAsString() {
+    public String idAsString() {
         return id;
     }
 }
